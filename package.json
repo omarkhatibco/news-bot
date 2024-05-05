@@ -1,15 +1,18 @@
 {
-  "name": "news-bot",
-  "version": "1.0.50",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
-  },
-  "dependencies": {
-    "elysia": "latest"
-  },
-  "devDependencies": {
-    "bun-types": "latest"
-  },
-  "module": "src/index.js"
+	"name": "news-bot",
+	"version": "1.0.50",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "bunx @biomejs/biome lint --apply ./",
+		"format": "bunx @biomejs/biome format --write ./",
+		"dev": "bun run --watch src/index.ts"
+	},
+	"dependencies": {
+		"elysia": "latest"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.7.2",
+		"bun-types": "latest"
+	},
+	"module": "src/index.js"
 }
