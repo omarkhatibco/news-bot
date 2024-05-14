@@ -1,18 +1,32 @@
 {
-	"name": "news-bot",
-	"version": "1.0.50",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "bunx @biomejs/biome lint --apply ./",
-		"format": "bunx @biomejs/biome format --write ./",
-		"dev": "bun run --watch src/index.ts"
-	},
-	"dependencies": {
-		"elysia": "latest"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "1.7.2",
-		"bun-types": "latest"
-	},
-	"module": "src/index.js"
+  "name": "news-bot",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "bunx @biomejs/biome lint --apply ./",
+    "format": "bunx @biomejs/biome format --write ./",
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.0.2",
+    "@langchain/community": "^0.0.57",
+    "@langchain/openai": "^0.0.29",
+    "@mozilla/readability": "^0.5.0",
+    "@traceloop/node-server-sdk": "^0.8.0",
+    "ai": "^3.1.8",
+    "cheerio": "^1.0.0-rc.12",
+    "elysia": "latest",
+    "html-to-text": "^9.0.5",
+    "jsdom": "^24.0.0",
+    "langchain": "^0.1.37",
+    "llamaindex": "^0.3.5",
+    "logixlysia": "^3.1.0",
+    "pdf-parse": "^1.1.1",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.2",
+    "bun-types": "latest"
+  },
+  "module": "src/index.js"
 }
