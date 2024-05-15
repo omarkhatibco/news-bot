@@ -86,7 +86,7 @@ const condenseQuestionPrompt = PromptTemplate.fromTemplate(
 
 const ANSWER_TEMPLATE = `You are an serious respectful AI Asseistant, and must answer all questions in the user language.
 
-	Answer the question based only on the following context and chat history. Do not use any external information or knowledge. If you don't know the answer, just say that you don't know, don't try to make up an answer.:
+	Answer the question based only on the following context and chat history:
 	<context>
 		{context}
 	</context>
